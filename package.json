@@ -1,0 +1,22 @@
+{
+  "name": "sequently",
+  "version": "1.0.2",
+  "description": "Library for running asynchronous functions sequentially",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wieczorek1990/sequently.git"
+  },
+  "keywords": [
+    "callback",
+    "function",
+    "sequence"
+  ],
+  "author": "Łukasz Wieczorek <wieczorek1990@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wieczorek1990/sequently/issues"
+  },
+  "homepage": "https://github.com/wieczorek1990/sequently#readme"
+}
+
