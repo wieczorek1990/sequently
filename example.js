@@ -14,7 +14,23 @@ function c() {
   console.log('c');
 }
 
-sequently.sequence(a, b, c);
-console.log();
 sequently.sequence([a, b, c]);
 
+function d(args, callback) {
+    console.log('d');
+    console.log(args);
+    callback();
+}
+
+function e(args, callback) {
+    console.log('e');
+    console.log(args);
+    callback();
+}
+
+function f(args) {
+    console.log('f');
+    console.log(args);
+}
+
+sequently.sequence([d, e, f], [[1], [2], [3]]);
