@@ -1,3 +1,5 @@
+"use strict";
+
 sequently = require('./index.js')
 
 function a(callback) {

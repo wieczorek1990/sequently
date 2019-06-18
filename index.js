@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = {
   sequence: function (functions, args) {
     var function_args;
@@ -15,7 +17,8 @@ module.exports = {
       var incrementer = function () {
         prime_index += 1;
         function_primes[prime_index](incrementers[prime_index]);
-      }
+      };
+
       incrementers.push(incrementer);
 
       var function_prime = function (callback) {
@@ -24,7 +27,8 @@ module.exports = {
         } else {
           functions[prime_index](function_args[prime_index], callback);
         }
-      }
+      };
+
       function_primes.push(function_prime);
     }
 
