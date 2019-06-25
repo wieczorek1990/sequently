@@ -1,6 +1,6 @@
 {
   "name": "sequently",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Library for running asynchronous functions sequentially",
   "main": "index.js",
   "repository": {
@@ -19,3 +19,4 @@
   },
   "homepage": "https://github.com/wieczorek1990/sequently#readme"
 }
+
