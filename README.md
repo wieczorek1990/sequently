@@ -1,11 +1,14 @@
+
 sequently
 =========
 
 Library for running asynchronous functions sequentially using callbacks.
 
-## Example usage
+## Examples
 
 ```javascript
+import $S from './sequently.js';
+
 function a(callback) {
   console.log('a');
   callback();
@@ -20,7 +23,7 @@ function c() {
   console.log('c');
 }
 
-sequently.sequence([a, b, c]);
+$S.sequence([a, b, c]);
 
 
 function d(args, callback) {
@@ -40,5 +43,5 @@ function f(args) {
     console.log(args);
 }
 
-sequently.sequence([d, e, f], [[1], [2], [3]]);
+$S.sequence([d, e, f], [[1], [2], [3]]);
 ```

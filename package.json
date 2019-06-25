@@ -2,7 +2,6 @@
   "name": "sequently",
   "version": "3.0.0",
   "description": "Library for running asynchronous functions sequentially",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wieczorek1990/sequently.git"
@@ -17,6 +16,21 @@
   "bugs": {
     "url": "https://github.com/wieczorek1990/sequently/issues"
   },
-  "homepage": "https://github.com/wieczorek1990/sequently#readme"
+  "homepage": "https://github.com/wieczorek1990/sequently#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "core-js": "3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  }
 }
-
