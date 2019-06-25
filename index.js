@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = {
+var $S = {
   sequence: function (functions, args) {
     var function_args;
     var function_primes = [];
