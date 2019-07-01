@@ -1,4 +1,3 @@
-
 module.exports = {
   module: {
     rules: [
@@ -6,7 +5,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       }
     ]
@@ -15,7 +14,7 @@ module.exports = {
     minimize: false
   },
   output: {
-    library: "Sequently",
-    filename: "sequently.js"
+    library: 'Sequently',
+    filename: 'sequently.js'
   }
-};
+}
