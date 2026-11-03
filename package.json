@@ -1,6 +1,6 @@
 {
   "name": "sequently",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Library for running asynchronous functions sequentially",
   "repository": {
     "type": "git",
