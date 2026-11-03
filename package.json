@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/wieczorek1990/sequently#readme",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
+    "@babel/cli": "^8.1.0",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "babel-loader": "^8.0.6",
-    "standard": "^12.0.1",
+    "standard": "^9.0.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-dev-server": "^6.1.0"
   },
   "dependencies": {
     "core-js": "3"
@@ -34,5 +34,9 @@
     "build": "webpack --mode production",
     "test": "node --test test/*.js"
   },
-  "type": "module"
+  "type": "module",
+  "allowScripts": {
+    "core-js@3.40.0": true,
+    "fsevents@2.3.3": true
+  }
 }
