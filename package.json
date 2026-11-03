@@ -31,6 +31,8 @@
     "core-js": "3"
   },
   "scripts": {
-    "build": "webpack --mode production"
-  }
+    "build": "webpack --mode production",
+    "test": "node --test test/*.js"
+  },
+  "type": "module"
 }

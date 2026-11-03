@@ -7,16 +7,29 @@ export default {
     let incrementers = []
     let primeIndex = 0
 
+    if (!Array.isArray(functions) || functions.length === 0) {
+      return
+    }
+
     if (!Array.isArray(args)) {
       functionArgs = Array(functions.length).fill([])
     } else {
-      functionArgs = args
+      functionArgs = []
+      for (let i = 0; i < functions.length; i += 1) {
+        if (Array.isArray(args[i])) {
+          functionArgs.push(args[i])
+        } else {
+          functionArgs.push([])
+        }
+      }
     }
 
     for (let index = 0; index < functions.length; index += 1) {
       let incrementer = function () {
         primeIndex += 1
-        functionPrimes[primeIndex](incrementers[primeIndex])
+        if (primeIndex < functionPrimes.length) {
+          functionPrimes[primeIndex](incrementers[primeIndex])
+        }
       }
 
       incrementers.push(incrementer)
